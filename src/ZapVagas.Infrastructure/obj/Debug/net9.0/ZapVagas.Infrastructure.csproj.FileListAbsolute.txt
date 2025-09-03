@@ -1,0 +1,17 @@
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Infrastructure\bin\Debug\net9.0\ZapVagas.Infrastructure.deps.json
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Infrastructure\bin\Debug\net9.0\ZapVagas.Infrastructure.dll
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Infrastructure\bin\Debug\net9.0\ZapVagas.Infrastructure.pdb
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Infrastructure\bin\Debug\net9.0\ZapVagas.Application.dll
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Infrastructure\bin\Debug\net9.0\ZapVagas.Domain.dll
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Infrastructure\bin\Debug\net9.0\ZapVagas.Domain.pdb
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Infrastructure\bin\Debug\net9.0\ZapVagas.Application.pdb
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Infrastructure\obj\Debug\net9.0\ZapVagas.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Infrastructure\obj\Debug\net9.0\ZapVagas.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Infrastructure\obj\Debug\net9.0\ZapVagas.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Infrastructure\obj\Debug\net9.0\ZapVagas.Infrastructure.AssemblyInfo.cs
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Infrastructure\obj\Debug\net9.0\ZapVagas.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Infrastructure\obj\Debug\net9.0\ZapVagas.5AD8E488.Up2Date
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Infrastructure\obj\Debug\net9.0\ZapVagas.Infrastructure.dll
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Infrastructure\obj\Debug\net9.0\refint\ZapVagas.Infrastructure.dll
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Infrastructure\obj\Debug\net9.0\ZapVagas.Infrastructure.pdb
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Infrastructure\obj\Debug\net9.0\ref\ZapVagas.Infrastructure.dll

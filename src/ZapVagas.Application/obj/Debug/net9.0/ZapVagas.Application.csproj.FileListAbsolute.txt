@@ -1,0 +1,15 @@
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Application\bin\Debug\net9.0\ZapVagas.Application.deps.json
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Application\bin\Debug\net9.0\ZapVagas.Application.dll
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Application\bin\Debug\net9.0\ZapVagas.Application.pdb
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Application\bin\Debug\net9.0\ZapVagas.Domain.dll
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Application\bin\Debug\net9.0\ZapVagas.Domain.pdb
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Application\obj\Debug\net9.0\ZapVagas.Application.csproj.AssemblyReference.cache
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Application\obj\Debug\net9.0\ZapVagas.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Application\obj\Debug\net9.0\ZapVagas.Application.AssemblyInfoInputs.cache
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Application\obj\Debug\net9.0\ZapVagas.Application.AssemblyInfo.cs
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Application\obj\Debug\net9.0\ZapVagas.Application.csproj.CoreCompileInputs.cache
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Application\obj\Debug\net9.0\ZapVagas.38486911.Up2Date
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Application\obj\Debug\net9.0\ZapVagas.Application.dll
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Application\obj\Debug\net9.0\refint\ZapVagas.Application.dll
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Application\obj\Debug\net9.0\ZapVagas.Application.pdb
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Application\obj\Debug\net9.0\ref\ZapVagas.Application.dll

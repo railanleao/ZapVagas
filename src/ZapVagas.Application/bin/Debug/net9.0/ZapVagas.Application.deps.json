@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "ZapVagas.Application/1.0.0": {
+        "dependencies": {
+          "ZapVagas.Domain": "1.0.0"
+        },
+        "runtime": {
+          "ZapVagas.Application.dll": {}
+        }
+      },
+      "ZapVagas.Domain/1.0.0": {
+        "runtime": {
+          "ZapVagas.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ZapVagas.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ZapVagas.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

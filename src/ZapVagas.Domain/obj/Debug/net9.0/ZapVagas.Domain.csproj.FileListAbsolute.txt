@@ -1,0 +1,11 @@
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Domain\bin\Debug\net9.0\ZapVagas.Domain.deps.json
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Domain\bin\Debug\net9.0\ZapVagas.Domain.dll
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Domain\bin\Debug\net9.0\ZapVagas.Domain.pdb
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Domain\obj\Debug\net9.0\ZapVagas.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Domain\obj\Debug\net9.0\ZapVagas.Domain.AssemblyInfoInputs.cache
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Domain\obj\Debug\net9.0\ZapVagas.Domain.AssemblyInfo.cs
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Domain\obj\Debug\net9.0\ZapVagas.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Domain\obj\Debug\net9.0\ZapVagas.Domain.dll
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Domain\obj\Debug\net9.0\refint\ZapVagas.Domain.dll
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Domain\obj\Debug\net9.0\ZapVagas.Domain.pdb
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Domain\obj\Debug\net9.0\ref\ZapVagas.Domain.dll
