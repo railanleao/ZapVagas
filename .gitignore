@@ -1,0 +1,56 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+Debug/
+Release/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+
+# VS Code
+.vscode/
+
+# Test results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+*.nuget.props
+*.nuget.targets
+
+# Rider (caso alguém use JetBrains)
+.idea/
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# Entity Framework
+*_i.c
+*_p.c
+*_p.h
+*.dbmdl
+*.jfm
+*.ndf
+*.ldf
+
+# Outros arquivos temporários
+*.db
+*.bak
+*.log
+*.tmp
+*.cache
