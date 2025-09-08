@@ -102,3 +102,4 @@ C:\Users\Railan Leão\src\ZapVagas\tests\ZapVagas.UnitTests\obj\Debug\net9.0\ref
 C:\Users\Railan Leão\src\ZapVagas\tests\ZapVagas.UnitTests\obj\Debug\net9.0\ZapVagas.UnitTests.pdb
 C:\Users\Railan Leão\src\ZapVagas\tests\ZapVagas.UnitTests\obj\Debug\net9.0\ZapVagas.UnitTests.genruntimeconfig.cache
 C:\Users\Railan Leão\src\ZapVagas\tests\ZapVagas.UnitTests\obj\Debug\net9.0\ref\ZapVagas.UnitTests.dll
+C:\Users\Railan Leão\src\ZapVagas\tests\ZapVagas.UnitTests\obj\Debug\net9.0\ZapVagas.UnitTests.sourcelink.json

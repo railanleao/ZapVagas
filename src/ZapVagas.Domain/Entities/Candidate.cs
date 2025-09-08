@@ -1,13 +1,22 @@
 ﻿namespace ZapVagas.Domain.Entities
 {
-    internal class Candidate
+    public class Candidate
     {
-        public Guid CandidateId { get; set; }
-        public string Name { get; set; }
-        public string Email { get; set; }
-        public string Phone { get; set; }
-        public string Education { get; set; }
-        public string SenhaHaash { get; set; }
-        public DateTime RegistrationDate { get; set; }
+        public Guid CandidateId { get; init; }
+        public string Name { get; private set; }
+        public string Phone { get; private set; }
+        public string Education { get; private set; }
+        public DateTime StartDate { get; init; }
+
+        private Candidate() { }
+
+        public Candidate(Guid candidateId, string name, string phone, string education, DateTime startDate)
+        {
+            CandidateId = Guid.NewGuid();
+            Name = name;
+            Phone = phone;
+            Education = education;
+            StartDate = DateTime.Now;
+        }
     }
 }
