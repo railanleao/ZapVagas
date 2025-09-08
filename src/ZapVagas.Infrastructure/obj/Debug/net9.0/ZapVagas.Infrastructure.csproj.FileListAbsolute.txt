@@ -15,3 +15,6 @@ C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Infrastructure\obj\Debug\net9.0\
 C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Infrastructure\obj\Debug\net9.0\refint\ZapVagas.Infrastructure.dll
 C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Infrastructure\obj\Debug\net9.0\ZapVagas.Infrastructure.pdb
 C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Infrastructure\obj\Debug\net9.0\ref\ZapVagas.Infrastructure.dll
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Infrastructure\bin\Debug\net9.0\ZapVagas.Infrastructure.runtimeconfig.json
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Infrastructure\obj\Debug\net9.0\ZapVagas.Infrastructure.sourcelink.json
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Infrastructure\obj\Debug\net9.0\ZapVagas.Infrastructure.genruntimeconfig.cache

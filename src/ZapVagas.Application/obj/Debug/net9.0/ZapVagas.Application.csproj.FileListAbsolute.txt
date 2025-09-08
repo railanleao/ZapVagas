@@ -13,3 +13,4 @@ C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Application\obj\Debug\net9.0\Zap
 C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Application\obj\Debug\net9.0\refint\ZapVagas.Application.dll
 C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Application\obj\Debug\net9.0\ZapVagas.Application.pdb
 C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Application\obj\Debug\net9.0\ref\ZapVagas.Application.dll
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Application\obj\Debug\net9.0\ZapVagas.Application.sourcelink.json

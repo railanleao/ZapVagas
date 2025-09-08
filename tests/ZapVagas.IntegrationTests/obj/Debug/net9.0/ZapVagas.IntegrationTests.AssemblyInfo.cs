@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ZapVagas.IntegrationTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+666e7eb93ebec32182fd9b92757260628865ab08")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+134d1686df4b635e447b9243b6fa053af54c062d")]
 [assembly: System.Reflection.AssemblyProductAttribute("ZapVagas.IntegrationTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ZapVagas.IntegrationTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

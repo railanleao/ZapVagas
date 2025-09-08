@@ -9,3 +9,4 @@ C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Domain\obj\Debug\net9.0\ZapVagas
 C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Domain\obj\Debug\net9.0\refint\ZapVagas.Domain.dll
 C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Domain\obj\Debug\net9.0\ZapVagas.Domain.pdb
 C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Domain\obj\Debug\net9.0\ref\ZapVagas.Domain.dll
+C:\Users\Railan Leão\src\ZapVagas\src\ZapVagas.Domain\obj\Debug\net9.0\ZapVagas.Domain.sourcelink.json
