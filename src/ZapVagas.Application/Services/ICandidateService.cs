@@ -8,6 +8,6 @@ namespace ZapVagas.Application.Services
         Task<CandidateResponseDto> CreateAsync(CandidateCreateDto dto);
         Task<CandidateResponseDto> GetByIdAsync(Guid id);
         Task<CandidateResponseDto> Update(Guid id, CandidateUpdateDto dto);
-        Task<CandidateResponseDto> Delete(Guid id);
+        Task<bool> DeleteById(Guid id);
     }
 }

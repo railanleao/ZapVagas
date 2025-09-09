@@ -4,7 +4,7 @@ using ZapVagas.Domain.Entities;
 
 namespace ZapVagas.Infrastructure.MigrationMapper
 {
-    internal class CandidateMapper : IEntityTypeConfiguration<Candidate>
+    public class CandidateMapper : IEntityTypeConfiguration<Candidate>
     {
         public void Configure(EntityTypeBuilder<Candidate> builder)
         {

@@ -5,7 +5,7 @@ namespace ZapVagas.Infrastructure.DataContext
 {
     public class ZapVagasDbContext : DbContext
     {
-        DbSet<Candidate> Candidates { get; set; }
+        public DbSet<Candidate> Candidates { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

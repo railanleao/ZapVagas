@@ -1,5 +1,3 @@
-﻿namespace ZapVagas.Application.Dtos.Candidate.Request
-{
+﻿namespace ZapVagas.Application.Dtos.Candidate.Request;
     //Adicionar jobPreference futuro
-    public record CandidateCreateDto(string nome, string phone, string education);
-}
+    public record CandidateCreateDto(string name, string phone, string education);

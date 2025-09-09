@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ZapVagas.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+134d1686df4b635e447b9243b6fa053af54c062d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+23e08fcb62fca82ac7af29109d22a84e0cafa48a")]
 [assembly: System.Reflection.AssemblyProductAttribute("ZapVagas.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ZapVagas.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
