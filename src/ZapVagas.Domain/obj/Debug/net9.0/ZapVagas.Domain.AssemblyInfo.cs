@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ZapVagas.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+23e08fcb62fca82ac7af29109d22a84e0cafa48a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a0f72b22ddef153b2cdb07f75c5f4c011ffedaef")]
 [assembly: System.Reflection.AssemblyProductAttribute("ZapVagas.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ZapVagas.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
