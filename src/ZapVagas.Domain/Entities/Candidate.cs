@@ -19,18 +19,57 @@
             Education = education;
             StartDate = DateTime.Now;
         }
-        public void UpdateName(string name) => Name = name;
-
-        public void UpdatePhone(string phone) => Phone = phone;
-        public void UpdateEducation(string education) => Education = education;
-
-        public void AddJobPreference(string cargo, string location)
+        public void UpdateName(string name)
         {
+            if (!ValidationHelper.ShouldUpdate(Name, name))
+                return;
+
+            Name = name;
+        }
+
+        public void UpdatePhone(string phone)
+        {
+            if (!ValidationHelper.ShouldUpdate(Phone, phone))
+                return;
+
+            Phone = phone;
+        }
+        public void UpdateEducation(string education)
+        {
+            if (!ValidationHelper.ShouldUpdate(Education, education))
+                return;
+
+            Education = education;
+        }
+
+        public void AddJobPreference(string area, string location)
+        {
+            JobPreferences ??= new List<JobPreference>();
+
             if (JobPreferences.Count >= 3)
                 throw new InvalidOperationException("Candidato só pode ter até 3 preferência de trabalhos!");
 
-            JobPreferences.Add(new JobPreference(CandidateId, cargo, location));
+            JobPreferences.Add(new JobPreference(CandidateId, area, location));
+        }
+        public void UpdateJobPreference(Guid preferenceId, string area, string location)
+        {
+            var preference = JobPreferences?.FirstOrDefault(jp => jp.PreferenceId == preferenceId);
+
+            if (preference is null)
+                throw new KeyNotFoundException("Preferência de trabalho não encontrada!");
+
+            preference.UpdateArea(area);
+            preference.UpdateLocation(location);
         }
         public void ClearJobPreferences() => JobPreferences.Clear();
     }
+    internal static class ValidationHelper
+    {
+        public static bool ShouldUpdate(string currentValue, string newValue)
+        {
+            return !string.IsNullOrWhiteSpace(newValue) &&
+                   !string.Equals(currentValue, newValue, StringComparison.OrdinalIgnoreCase);
+        }
+    }
+
 }

@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ZapVagas.Infrastructure.DataContext;
 
@@ -10,9 +11,11 @@ using ZapVagas.Infrastructure.DataContext;
 namespace ZapVagas.Infrastructure.Migrations
 {
     [DbContext(typeof(ZapVagasDbContext))]
-    partial class ZapVagasDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250909131808_Add-entity-jobPreference")]
+    partial class AddentityjobPreference
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.8");

@@ -1,4 +1,5 @@
 using ZapVagas.API.Controllers.Candidate;
+using ZapVagas.API.Controllers.JobPreference;
 using ZapVagas.Application.IRepository;
 using ZapVagas.Application.IUnitOfWork;
 using ZapVagas.Application.Services;
@@ -14,8 +15,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddOpenApi();
 builder.Services.AddScoped<ZapVagasDbContext>();
 builder.Services.AddScoped<ICandidateRepository, CandidateRepository>();
+builder.Services.AddScoped<IJobPreferenceRepository, JobPreferenceRepository>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<ICandidateService, CandidateService>();
+builder.Services.AddScoped<IJobPreferenceService, JobPreferenceService>();
 
 var app = builder.Build();
 
@@ -29,5 +32,6 @@ app.UseHttpsRedirection();
 
 //Routes
 app.CandidateRoutes();
+app.JobPreferenceRoutes();
 
 app.Run();
