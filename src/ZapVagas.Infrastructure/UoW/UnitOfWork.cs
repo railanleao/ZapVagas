@@ -8,12 +8,14 @@ namespace ZapVagas.Infrastructure.UoW
     {
         private readonly ZapVagasDbContext _context;
         public ICandidateRepository Candidates { get; }
+        public IJobPreferenceRepository JobPreferences { get; }
         //public IEmployerRepository Employers { get; }
         //public IJobVacancyRepository JobVacancies { get; }
         //public IApplicationRepository Applications { get; }
 
         public UnitOfWork(ZapVagasDbContext context,
-                          ICandidateRepository candidateRepository
+                          ICandidateRepository candidateRepository,
+                          IJobPreferenceRepository jobPreferenceRepository
                           //IEmployerRepository employerRepository,
                           //IJobVacancyRepository jobVacancyRepository,
                           //IApplicationRepository applicationRepository
@@ -22,6 +24,7 @@ namespace ZapVagas.Infrastructure.UoW
             _context = context;
 
             Candidates = candidateRepository;
+            JobPreferences = jobPreferenceRepository;
             //Employers = employerRepository;
             //JobVacancies = jobVacancyRepository;
             //Applications = applicationRepository;

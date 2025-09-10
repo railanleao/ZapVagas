@@ -5,9 +5,9 @@ namespace ZapVagas.Application.Services
 {
     public interface ICandidateService
     {
-        Task<CandidateResponseDto> CreateAsync(CandidateCreateDto dto);
-        Task<CandidateResponseDto> GetByIdAsync(Guid id);
-        Task<CandidateResponseDto> Update(Guid id, CandidateUpdateDto dto);
+        Task<CandidateResponse> CreateAsync(CandidateCreateRequest dto);
+        Task<CandidateResponse> GetByIdAsync(Guid id);
+        Task<CandidateResponse> Update(Guid id, CandidateUpdateRequest dto);
         Task<bool> DeleteById(Guid id);
     }
 }

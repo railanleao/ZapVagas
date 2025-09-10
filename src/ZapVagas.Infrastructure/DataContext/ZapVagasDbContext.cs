@@ -6,6 +6,7 @@ namespace ZapVagas.Infrastructure.DataContext
     public class ZapVagasDbContext : DbContext
     {
         public DbSet<Candidate> Candidates { get; set; }
+        public DbSet<JobPreference> JobPreferences { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

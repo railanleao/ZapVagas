@@ -43,6 +43,47 @@ namespace ZapVagas.Infrastructure.Migrations
 
                     b.ToTable("Candidates", (string)null);
                 });
+
+            modelBuilder.Entity("ZapVagas.Domain.Entities.JobPreference", b =>
+                {
+                    b.Property<Guid>("PreferenceId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Area")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("TEXT");
+
+                    b.Property<Guid>("CandidateId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Location")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("PreferenceId");
+
+                    b.HasIndex("CandidateId");
+
+                    b.ToTable("JobPreferences", (string)null);
+                });
+
+            modelBuilder.Entity("ZapVagas.Domain.Entities.JobPreference", b =>
+                {
+                    b.HasOne("ZapVagas.Domain.Entities.Candidate", "Candidate")
+                        .WithMany("JobPreferences")
+                        .HasForeignKey("CandidateId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Candidate");
+                });
+
+            modelBuilder.Entity("ZapVagas.Domain.Entities.Candidate", b =>
+                {
+                    b.Navigation("JobPreferences");
+                });
 #pragma warning restore 612, 618
         }
     }

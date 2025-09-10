@@ -14,7 +14,7 @@ namespace ZapVagas.Infrastructure.MigrationMapper
             builder.HasKey(jp => jp.PreferenceId);
             builder.Property(jp => jp.PreferenceId).ValueGeneratedNever();
 
-            builder.Property(jp => jp.Cargo).HasMaxLength(100).IsRequired();
+            builder.Property(jp => jp.Area).HasMaxLength(100).IsRequired();
             builder.Property(jp => jp.Location).HasMaxLength(100).IsRequired();
             builder.HasOne(jp => jp.Candidate)             // JobPreference tem um Candidate
                .WithMany(c => c.JobPreferences)            // Candidate tem muitas JobPreferences

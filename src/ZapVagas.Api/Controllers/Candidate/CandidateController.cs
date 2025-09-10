@@ -16,13 +16,14 @@ namespace ZapVagas.API.Controllers.Candidate
                 return result is null ? Results.NotFound() : Results.Ok(result);
             });
 
-            routesCandidate.MapPost("", async (CandidateCreateDto dto, [FromServices] ICandidateService service) =>
+            routesCandidate.MapPost("", async (CandidateCreateRequest dto, [FromServices] ICandidateService service) =>
             {
-                var candidato = dto;
-                await service.CreateAsync(dto);
+                var candidate = await service.CreateAsync(dto);
+
+                return Results.Created($"/api/candidates", candidate);
             });
 
-            routesCandidate.MapPut("{id:guid}", async (Guid id, CandidateUpdateDto dto, [FromServices] ICandidateService service) =>
+            routesCandidate.MapPut("{id:guid}", async (Guid id, CandidateUpdateRequest dto, [FromServices] ICandidateService service) =>
             {
                 var result = await service.Update(id, dto);
                 return result is null ? Results.NotFound() : Results.Ok(result);
