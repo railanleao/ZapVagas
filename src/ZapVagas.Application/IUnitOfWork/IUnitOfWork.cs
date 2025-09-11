@@ -6,6 +6,8 @@ namespace ZapVagas.Application.IUnitOfWork
     {
         ICandidateRepository Candidates { get; }
         IJobPreferenceRepository JobPreferences { get; }
+        ICompanyRepository Companies { get; }
+        IJobVacancyRepository JobVacancies { get; }
 
         Task<int> CommitAsync();
     }

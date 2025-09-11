@@ -6,6 +6,9 @@ using ZapVagas.Application.Services;
 using ZapVagas.Infrastructure.DataContext;
 using ZapVagas.Infrastructure.Repository;
 using ZapVagas.Infrastructure.Service.CandidateService;
+using ZapVagas.Infrastructure.Service.CompanyService;
+using ZapVagas.Infrastructure.Service.JobPreferenceSerive;
+using ZapVagas.Infrastructure.Service.JobVacancyService;
 using ZapVagas.Infrastructure.UoW;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,9 +19,13 @@ builder.Services.AddOpenApi();
 builder.Services.AddScoped<ZapVagasDbContext>();
 builder.Services.AddScoped<ICandidateRepository, CandidateRepository>();
 builder.Services.AddScoped<IJobPreferenceRepository, JobPreferenceRepository>();
+builder.Services.AddScoped<ICompanyRepository, CompanyRepository>();
+builder.Services.AddScoped<IJobVacancyRepository, JobVacancyRepository>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<ICandidateService, CandidateService>();
 builder.Services.AddScoped<IJobPreferenceService, JobPreferenceService>();
+builder.Services.AddScoped<ICompanyService, CompanyService>();
+builder.Services.AddScoped<IJobVacancyService, JobVacancyService>();
 
 var app = builder.Build();
 

@@ -1,4 +1,4 @@
-﻿namespace ZapVagas.Domain.Entities
+﻿    namespace ZapVagas.Domain.Entities
 {
     public class JobPreference
     {

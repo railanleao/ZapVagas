@@ -1,12 +1,15 @@
-﻿namespace ZapVagas.Domain.Entities
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace ZapVagas.Domain.Entities
 {
     public class Candidate
     {
         public Guid CandidateId { get; init; }
         public string Name { get; private set; }
+        [Phone]
         public string Phone { get; private set; }
         public string Education { get; private set; }
-        public List<JobPreference> JobPreferences { get; private set; }
+        public ICollection<JobPreference> JobPreferences { get; private set; }
         public DateTime StartDate { get; init; }
 
         private Candidate() { }
@@ -56,13 +59,14 @@
             var preference = JobPreferences?.FirstOrDefault(jp => jp.PreferenceId == preferenceId);
 
             if (preference is null)
-                throw new KeyNotFoundException("Preferência de trabalho não encontrada!");
+                throw new InvalidOperationException("Preferência de trabalho não encontrada!");
 
             preference.UpdateArea(area);
             preference.UpdateLocation(location);
         }
         public void ClearJobPreferences() => JobPreferences.Clear();
     }
+
     internal static class ValidationHelper
     {
         public static bool ShouldUpdate(string currentValue, string newValue)
@@ -71,5 +75,4 @@
                    !string.Equals(currentValue, newValue, StringComparison.OrdinalIgnoreCase);
         }
     }
-
 }
