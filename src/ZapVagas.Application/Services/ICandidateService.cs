@@ -5,6 +5,7 @@ namespace ZapVagas.Application.Services
 {
     public interface ICandidateService
     {
+        Task<IEnumerable<CandidateResponse>> GetAllAsync();
         Task<CandidateResponse> CreateAsync(CandidateCreateRequest dto);
         Task<CandidateResponse> GetByIdAsync(Guid id);
         Task<CandidateResponse> Update(Guid id, CandidateUpdateRequest dto);

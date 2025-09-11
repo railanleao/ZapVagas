@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ZapVagas.Application.Dtos.Candidate.Request;
+using ZapVagas.Application.Dtos.JobPreference.Request;
 using ZapVagas.Application.Services;
 
 namespace ZapVagas.API.Controllers.JobPreference
@@ -10,6 +10,13 @@ namespace ZapVagas.API.Controllers.JobPreference
         {
             var routesPreference = app.MapGroup("api/preferences");
 
+            routesPreference.MapGet("", async ([FromServices] IJobPreferenceService service) =>
+            {
+                var preferences = await service.GetAllAsync();
+
+                return preferences.Any() ? Results.Ok(preferences) : Results.NotFound(new { error = "Não foram encontradas preferências de trabalho." });
+            });
+
             routesPreference.MapGet("{id:guid}", async (Guid id, [FromServices] IJobPreferenceService service) =>
             {
                 var preferences = await service.GetPreferencesByCandidateIdAsync(id);
@@ -17,7 +24,7 @@ namespace ZapVagas.API.Controllers.JobPreference
                 return preferences.Any() ? Results.Ok(preferences) : Results.NotFound(new { error = "Não foram encontradas preferências de trabalho para esse candidato." });
             });
 
-            routesPreference.MapPost("{id:guid}", async (Guid id, JobPreferenceRequest dto, [FromServices] IJobPreferenceService service) =>
+            routesPreference.MapPost("{id:guid}", async (Guid id, JobPreferenceCreateRequest dto, [FromServices] IJobPreferenceService service) =>
             {
                 try
                 {
@@ -28,6 +35,12 @@ namespace ZapVagas.API.Controllers.JobPreference
                 {
                     return Results.NotFound(new { error = ex.Message });
                 }
+            });
+
+            routesPreference.MapPut("{id:guid}", (Guid id, JobPreferenceUpdateRequest request, [FromServices] IJobPreferenceService serive) =>
+            {
+                var preference = serive.Update(id, request);
+                return preference is null ? Results.NotFound(new { error = "Preferência de trabalho não encontrada." }) : Results.Ok(preference);
             });
         }
     }

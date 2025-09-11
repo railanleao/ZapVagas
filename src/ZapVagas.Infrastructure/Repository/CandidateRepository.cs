@@ -16,17 +16,5 @@ namespace ZapVagas.Infrastructure.Repository
         {
             throw new NotImplementedException();
         }
-
-        public async Task<Candidate> GetCandidateByIdAsync(Guid id)
-        {
-            return await _context.Candidates
-                           .Include(c => c.JobPreferences)
-                           .FirstOrDefaultAsync(c => c.CandidateId == id);
-        }
-
-        public Task<Candidate> GetCandidateWithPreferencesAsync(Guid candidateId)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

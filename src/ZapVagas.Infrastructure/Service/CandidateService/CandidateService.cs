@@ -14,12 +14,26 @@ namespace ZapVagas.Infrastructure.Service.CandidateService
         {
             _uow = uow;
         }
+        public async Task<IEnumerable<CandidateResponse>> GetAllAsync()
+        {
+            var candidates = await _uow.Candidates.GetAllAsync();
+
+            if (candidates is null) return Enumerable.Empty<CandidateResponse>();
+
+            return candidates.Select(candidate => new CandidateResponse
+            {
+                Name = candidate.Name,
+                Phone = candidate.Phone,
+                Education = candidate.Education
+            });
+        }
+
         public async Task<CandidateResponse> CreateAsync(CandidateCreateRequest dto)
         {
             var candidate = new Candidate(dto.name, dto.phone, dto.education);
 
-            foreach (var pref in dto.preference.Take(3))
-                candidate.AddJobPreference(pref.area, pref.location); 
+            //foreach (var pref in dto.preference.Take(3))
+            //    candidate.AddJobPreference(pref.area, pref.location); 
 
             await _uow.Candidates.AddAsync(candidate);
             await _uow.CommitAsync();
@@ -28,16 +42,13 @@ namespace ZapVagas.Infrastructure.Service.CandidateService
             {
                 Name = candidate.Name,
                 Phone = candidate.Phone,
-                Education = candidate.Education,
-                JobPreference = candidate.JobPreferences
-                                .Select(jp => new JobPreferenceResponse { Area = jp.Area })
-                                .ToList()
+                Education = candidate.Education
             };
         }
 
         public async Task<CandidateResponse> GetByIdAsync(Guid id)
         {
-            var candidate = await _uow.Candidates.GetCandidateByIdAsync(id);
+            var candidate = await _uow.Candidates.GetByIdAsync(id);
 
             if (candidate is null) return null;
 
@@ -45,16 +56,13 @@ namespace ZapVagas.Infrastructure.Service.CandidateService
             {
                 Name = candidate.Name,
                 Phone = candidate.Phone,
-                Education = candidate.Education,
-                JobPreference = candidate.JobPreferences
-                                .Select(jp => new JobPreferenceResponse { Area = jp.Area })
-                                .ToList()
+                Education = candidate.Education
             };
         }
 
         public async Task<CandidateResponse> Update(Guid id, CandidateUpdateRequest dto)
         {
-            var candidate = await _uow.Candidates.GetCandidateByIdAsync(id);
+            var candidate = await _uow.Candidates.GetByIdAsync(id);
 
             if (candidate is null) return null;
 
@@ -62,14 +70,16 @@ namespace ZapVagas.Infrastructure.Service.CandidateService
             candidate.UpdatePhone(dto.phone);
             candidate.UpdateEducation(dto.education);
 
-            for (int i = 0; i < candidate.JobPreferences.Count; i++)
-            {
-                var currentPref = candidate.JobPreferences[i];
-                var dtoPref = dto.preference.ElementAtOrDefault(i);
+            //for (int i = 0; i < candidate.JobPreferences.Count; i++)
+            //{
+            //    var prefs = candidate.JobPreferences.ToList();
 
-                if (dtoPref is not null)
-                    candidate.UpdateJobPreference(currentPref.PreferenceId, dtoPref.area, dtoPref.location);
-            }
+            //    var currentPref = prefs[i];
+            //    var dtoPref = dto.preference.ElementAtOrDefault(i);
+
+            //    if (dtoPref is not null)
+            //        candidate.UpdateJobPreference(currentPref.PreferenceId, dtoPref.area, dtoPref.location);
+            //}
 
             await _uow.CommitAsync();
 
@@ -77,10 +87,7 @@ namespace ZapVagas.Infrastructure.Service.CandidateService
             {
                 Name = candidate.Name,
                 Phone = candidate.Phone,
-                Education = candidate.Education,
-                JobPreference = candidate.JobPreferences
-                                .Select(jp => new JobPreferenceResponse { Area = jp.Area })
-                                .ToList()
+                Education = candidate.Education
             };
         }
 
