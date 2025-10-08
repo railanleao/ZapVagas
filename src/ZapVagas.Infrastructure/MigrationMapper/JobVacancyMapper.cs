@@ -18,7 +18,7 @@ namespace ZapVagas.Infrastructure.MigrationMapper
             builder.Property(v => v.Requirement).IsRequired().HasMaxLength(1000);
             builder.Property(v => v.EducationLevel).IsRequired().HasMaxLength(100);
             builder.Property(v => v.OpenPosition).IsRequired().HasMaxLength(100);
-            builder.Property(v => v.Status).IsRequired();
+
             builder.Property(v => v.StartDate).IsRequired();
             builder.Property(v => v.EndDate).IsRequired(false);
 
@@ -26,6 +26,10 @@ namespace ZapVagas.Infrastructure.MigrationMapper
                .WithMany(c => c.Vacancies)               // Company tem muitas Vacancies
                .HasForeignKey(v => v.CompanyId)         // FK configurada
                .OnDelete(DeleteBehavior.Cascade);       // Se apagar Company, apaga Vacancies
+
+            builder.Property(v => v.Status)
+                .IsRequired()
+                .HasConversion<string>();
         }
     }
 }

@@ -10,6 +10,7 @@ namespace ZapVagas.Domain.Entities
         public string Phone { get; private set; }
         public string Education { get; private set; }
         public ICollection<JobPreference> JobPreferences { get; private set; }
+        public ICollection<JobApplication> JobApplications { get; private set; }
         public DateTime StartDate { get; init; }
 
         private Candidate() { }
