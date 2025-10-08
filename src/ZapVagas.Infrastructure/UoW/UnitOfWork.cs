@@ -11,14 +11,14 @@ namespace ZapVagas.Infrastructure.UoW
         public IJobPreferenceRepository JobPreferences { get; }
         public ICompanyRepository Companies { get; }
         public IJobVacancyRepository JobVacancies { get; }
-        //public IApplicationRepository Applications { get; }
+        public IJobApplicationRepository JobApplications { get; }
 
         public UnitOfWork(ZapVagasDbContext context,
                           ICandidateRepository candidateRepository,
                           IJobPreferenceRepository jobPreferenceRepository,
                           ICompanyRepository companyRepository,
-                          IJobVacancyRepository jobVacancyRepository
-                          //IApplicationRepository applicationRepository
+                          IJobVacancyRepository jobVacancyRepository,
+                          IJobApplicationRepository JobApplicationRepository
                           )
         {
             _context = context;

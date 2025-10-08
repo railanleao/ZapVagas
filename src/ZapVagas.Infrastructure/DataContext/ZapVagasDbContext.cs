@@ -9,6 +9,7 @@ namespace ZapVagas.Infrastructure.DataContext
         public DbSet<JobPreference> JobPreferences { get; set; }
         public DbSet<Company> Companies { get; set; }
         public DbSet<JobVacancy> JobVacancies { get; set; }
+        public DbSet<JobApplication> JobApplications { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

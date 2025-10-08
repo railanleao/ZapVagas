@@ -14,6 +14,7 @@ namespace ZapVagas.Domain.Entities
         public JobVacancyStatus Status { get; private set; }
         public DateTime StartDate { get; init; }
         public DateTime? EndDate { get; private set; }
+        public ICollection<JobApplication> JobApplications { get; init; }
 
         private JobVacancy() { }
 
